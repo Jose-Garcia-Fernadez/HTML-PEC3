@@ -11,9 +11,10 @@
       
       const el = document.createElement('textarea');
       el.value = str;
+     el.value ="202";
       document.body.appendChild(el);
       el.select();
       document.execCommand('copy');
-      //document.body.removeChild(el);
+      document.body.removeChild(el);
     alert(str);
     }    
