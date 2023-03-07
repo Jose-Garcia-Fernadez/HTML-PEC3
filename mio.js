@@ -4,7 +4,8 @@ window.onload = function () {document.onmousemove = mostrarPosicionPuntero;		doc
   
     function copiarportapapeles(e){
       var str=(  (document.all)? event.x : e.pageX) + '\n' + ((document.all)? event.y : e.pageY);   
-      str= ((document.all)? event.x : e.pageX) + ' ' + document.documentElement.clientWidth + "  " +
+str=  "Ancho = " + document.documentElement.clientWidth +" " 
+      str= str + ((document.all)? event.x : e.pageX) + ' ' + document.documentElement.clientWidth + "  " +
       ((document.all)? event.y : e.pageY) +  ' '+ document.documentElement.clientHeight;
       
       const el = document.createElement('textarea');
