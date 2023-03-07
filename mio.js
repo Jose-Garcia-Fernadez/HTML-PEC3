@@ -14,4 +14,5 @@ window.onload = function () {document.onmousemove = mostrarPosicionPuntero;		doc
       document.execCommand('copy');
       document.body.removeChild(el);
 	alert(str);
+document.getElementById("tela").innerHTML=str;
 	}    
