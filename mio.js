@@ -4,7 +4,9 @@
   
     function copiarportapapeles(e){
       var str=(  (document.all)? event.x : e.pageX) + '\n' + ((document.all)? event.y : e.pageY);   
-      str= ((document.all)? event.x : e.pageX) + ' ' + document.documentElement.clientWidth + "  " +
+      
+     
+     str= ((document.all)? event.x : e.pageX) + ' ' + document.documentElement.clientWidth + "  " +
       ((document.all)? event.y : e.pageY) +  ' '+ document.documentElement.clientHeight;
       
       const el = document.createElement('textarea');
@@ -12,4 +14,6 @@
       document.body.appendChild(el);
       el.select();
       document.execCommand('copy');
-      document.body.removeChild(el);}    
+      document.body.removeChild(el);
+    alert(str);
+    }    
